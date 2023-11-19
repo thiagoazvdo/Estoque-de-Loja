@@ -1,25 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from '../Header';
 import './App.css';
-import TestComponent from '../TestComponent';
-import ClassComponent from '../ClassComponent';
+import '../Header/Header.css';
+import Button from '../Button';
+
+function TestComponent () {
+  return <img width="16" src="https://cdn.icon-icons.com/icons2/1129/PNG/512/searchmagnifierinterfacesymbol1_79893.png" alt="search-icon"/>
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <TestComponent />
-        <ClassComponent/>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header title="Store Stock"/>
+      <div className='Container'>
+        <Button content='Click me'
+        onClick={() => window.alert('mensagem exemplo')}
+        appendIcon={<TestComponent />}
+        />
+      </div>
     </div>
   );
 }
