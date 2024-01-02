@@ -26,4 +26,4 @@ const Products: Product[] = [
     }
 ]
 
-export default Product
+export default Products
