@@ -23,6 +23,18 @@ const Products: Product[] = [
         name: 'Pizza',
         price: 9.99,
         stock: 16
+    },
+    {
+        id: 4,
+        name: 'Ice Cream',
+        price: 7.00,
+        stock: 5
+    },
+    {
+        id: 5,
+        name: 'Donut',
+        price: 1.75,
+        stock: 30
     }
 ]
 

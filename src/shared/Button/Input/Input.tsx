@@ -12,7 +12,7 @@ const Input: React.FC<InputProps> = (props) =>{
         <span>{props.label}</span>
         <input
         {...props} 
-        placeholder="15th avenue" />
+        />
     </label>
 </div> 
 };
